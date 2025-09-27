@@ -8,6 +8,7 @@ async function start() {
   try {
     await sequelize.authenticate();
     console.log('DB connected');
+    //  await sequelize.sync({ alter: true });
     // Only sync in development if you want: await sequelize.sync();
     app.listen(port, () => console.log(`Server running on ${port}`));
   } catch (err) {

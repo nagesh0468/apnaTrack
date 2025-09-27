@@ -13,6 +13,8 @@ const sequelize = new Sequelize(
 );
 
 // Import models
+import createUserModel from './userModel';
+const User = createUserModel(sequelize);
 
-export { sequelize };
+export { sequelize, User };
 export default sequelize;
