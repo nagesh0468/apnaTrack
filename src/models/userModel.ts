@@ -29,7 +29,7 @@ const createUserModel = (sequelize: Sequelize) => {
             unique: true,
         },
     },
-{tableName:"users"});
+{tableName:"User"});
 
     return User;
 };
