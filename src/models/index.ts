@@ -14,7 +14,9 @@ const sequelize = new Sequelize(
 
 // Import models
 import createUserModel from './userModel';
+import createOrderModel from './userOrderModel';
 const User = createUserModel(sequelize);
+const Order = createOrderModel(sequelize);
 
-export { sequelize, User };
+export { sequelize, User,Order };
 export default sequelize;
